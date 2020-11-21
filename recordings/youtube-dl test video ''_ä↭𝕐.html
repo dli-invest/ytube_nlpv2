@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BaW_jenozKc</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+    </head>
+    <body>
+      <div class="uk-section uk-section-primary">
+        <div class="uk-container">
+
+        <h2>Video</h2>
+        <div id="ytplayer"></div>
+        <script>
+          // Load the IFrame Player API code asynchronously.
+          var tag = document.createElement('script');
+          tag.src = "https://www.youtube.com/player_api";
+          var firstScriptTag = document.getElementsByTagName('script')[0];
+          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+          // Replace the 'ytplayer' element with an <iframe> and
+          // YouTube player after the API code downloads.
+          var player;
+          function onYouTubePlayerAPIReady() {
+            player = new YT.Player('ytplayer', {
+              height: '576',
+              width: '1024',
+              videoId: 'BaW_jenozKc',
+              events: {
+                'onStateChange': onPlayerStateChange
+              }
+            });
+          }
+          function onPlayerStateChange(e)
+          {
+            if (e.data == 1 && ytSeconds > 0) {
+              e.target.seekTo(ytSeconds);
+              ytSeconds = 0;
+            }
+          }
+          function seekTo(seconds)
+          {
+            if (player.getPlayerState() == 1) {
+              player.seekTo(seconds);
+            }
+            else {
+              ytSeconds = seconds;
+              player.playVideo();
+            }
+          }
+        </script>
+        </div>
+      </div>
+      <div class="uk-section uk-section-muted">
+        <div class="uk-container">
+
+          <h3>Data</h3>
+          <table class="uk-table uk-table-striped">
+            <thead>
+              <tr>
+                  <th>Text</th>
+                  <th>duration</th>
+                  <th>start</th>
+                  <th>ents</th>
+                  <th>end</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>This is a test video for YouTube PL.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(0);">To 0:00:00</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        WORK_OF_ART
+                      </span>
+                      <span class="uk-label">
+                        YouTube PL
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(2);">To 0:00:02</a></td>
+                </tr>
+              
+                <tr>
+                  <td>For more information contact P-H-I-H-A-G-A-P-H-I-H-A-G-O-D.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(3);">To 0:00:03</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(9);">To 0:00:09</a></td>
+                </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </body>
+</html>

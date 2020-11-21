@@ -1,1 +1,6 @@
 youtube-dl
+spacy
+https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-2.3.1/en_core_web_lg-2.3.1.tar.gz
+Jinja2
+TextBlob
+polling

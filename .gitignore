@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+*.mp3
+recordings/*.mp3
+set_env.bat

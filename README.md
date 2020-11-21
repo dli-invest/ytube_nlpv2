@@ -9,3 +9,10 @@ where the automatic transcript system is not applied.
   b. run nlp process on resulting text file
 2. Send email 
 3. Update list of downloaded files to discord
+
+
+### Reference Videos
+
+- bX5EO7E34Yo
+- GwrN5anVK5A
+- n7GPJsMPivg

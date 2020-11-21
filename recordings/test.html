@@ -1,0 +1,2195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BaW_jenozKc</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+    </head>
+    <body>
+      <div class="uk-section uk-section-primary">
+        <div class="uk-container">
+
+        <h2>Video</h2>
+        <div id="ytplayer"></div>
+        <script>
+          // Load the IFrame Player API code asynchronously.
+          var tag = document.createElement('script');
+          tag.src = "https://www.youtube.com/player_api";
+          var firstScriptTag = document.getElementsByTagName('script')[0];
+          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+          // Replace the 'ytplayer' element with an <iframe> and
+          // YouTube player after the API code downloads.
+          var player;
+          function onYouTubePlayerAPIReady() {
+            player = new YT.Player('ytplayer', {
+              height: '576',
+              width: '1024',
+              videoId: 'BaW_jenozKc',
+              events: {
+                'onStateChange': onPlayerStateChange
+              }
+            });
+          }
+          function onPlayerStateChange(e)
+          {
+            if (e.data == 1 && ytSeconds > 0) {
+              e.target.seekTo(ytSeconds);
+              ytSeconds = 0;
+            }
+          }
+          function seekTo(seconds)
+          {
+            if (player.getPlayerState() == 1) {
+              player.seekTo(seconds);
+            }
+            else {
+              ytSeconds = seconds;
+              player.playVideo();
+            }
+          }
+        </script>
+        </div>
+      </div>
+      <div class="uk-section uk-section-muted">
+        <div class="uk-container">
+
+          <h3>Data</h3>
+          <table class="uk-table uk-table-striped">
+            <thead>
+              <tr>
+                  <th>Text</th>
+                  <th>duration</th>
+                  <th>start</th>
+                  <th>ents</th>
+                  <th>end</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>You've been watching this.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(0);">To 0:00:00</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(1260);">To 0:00:01</a></td>
+                </tr>
+              
+                <tr>
+                  <td>What this president is doing to subvert this election is unprecedented and unprecedented.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(1230);">To 0:00:01</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(9550);">To 0:00:09</a></td>
+                </tr>
+              
+                <tr>
+                  <td>If that's a word.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(9520);">To 0:00:09</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(10390);">To 0:00:10</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Would you call this a CO an attempt at a cop.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(10450);">To 0:00:10</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(13750);">To 0:00:13</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Oh there's no question it's an attempt to cut.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(13690);">To 0:00:13</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(16360);">To 0:00:16</a></td>
+                </tr>
+              
+                <tr>
+                  <td>As with everything.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(16360);">To 0:00:16</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(17230);">To 0:00:17</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Donald Trump does the intention is as Malin as one thinks the execution as incompetent as you can imagine</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(17170);">To 0:00:17</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Donald Trump
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Malin
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(26390);">To 0:00:26</a></td>
+                </tr>
+              
+                <tr>
+                  <td>and so it is likely to fail because it is not particularly well thought through, but there's no question.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(26360);">To 0:00:26</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(33110);">To 0:00:33</a></td>
+                </tr>
+              
+                <tr>
+                  <td>He is trying, you know, you put it exactly right</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(33140);">To 0:00:33</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(36860);">To 0:00:36</a></td>
+                </tr>
+              
+                <tr>
+                  <td>he's trying to execute a cool.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(36830);">To 0:00:36</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(38900);">To 0:00:38</a></td>
+                </tr>
+              
+                <tr>
+                  <td>And you pointed out.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(39140);">To 0:00:39</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(40400);">To 0:00:40</a></td>
+                </tr>
+              
+                <tr>
+                  <td>People say it's unprecedented in American history</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(40340);">To 0:00:40</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        NORP
+                      </span>
+                      <span class="uk-label">
+                        American
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(43280);">To 0:00:43</a></td>
+                </tr>
+              
+                <tr>
+                  <td>it's really pretty unprecedented around the world.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(43360);">To 0:00:43</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(46030);">To 0:00:46</a></td>
+                </tr>
+              
+                <tr>
+                  <td>I mean, when Augusto finish it in Chile, the general who had run the government as a dictatorship for decades when he lost an election, he left office.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(45970);">To 0:00:45</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Augusto
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        GPE
+                      </span>
+                      <span class="uk-label">
+                        Chile
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        DATE
+                      </span>
+                      <span class="uk-label">
+                        decades
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(56630);">To 0:00:56</a></td>
+                </tr>
+              
+                <tr>
+                  <td>You know when Indira Gandhi lost after have been declaring essentially martial law in India.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(56630);">To 0:00:56</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Indira Gandhi
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        GPE
+                      </span>
+                      <span class="uk-label">
+                        India
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(61670);">To 0:01:01</a></td>
+                </tr>
+              
+                <tr>
+                  <td>But she lost an election.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(61900);">To 0:01:01</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(63280);">To 0:01:03</a></td>
+                </tr>
+              
+                <tr>
+                  <td>She left off it.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(63220);">To 0:01:03</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(64270);">To 0:01:04</a></td>
+                </tr>
+              
+                <tr>
+                  <td>This is pretty out of bounds.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(64540);">To 0:01:04</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(67000);">To 0:01:07</a></td>
+                </tr>
+              
+                <tr>
+                  <td>You're really anywhere in the world.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(67380);">To 0:01:07</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(69450);">To 0:01:09</a></td>
+                </tr>
+              
+                <tr>
+                  <td>I'm reading to have something in your column.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(70820);">To 0:01:10</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(74010);">To 0:01:14</a></td>
+                </tr>
+              
+                <tr>
+                  <td>You write Trump's actions.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(74280);">To 0:01:14</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Trump
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(76170);">To 0:01:16</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Today will have a large and lasting effect on this country's politics for decades, creating a cancer that will metastasize in gruesome ways.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(76140);">To 0:01:16</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        DATE
+                      </span>
+                      <span class="uk-label">
+                        Today
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        DATE
+                      </span>
+                      <span class="uk-label">
+                        decades
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(85620);">To 0:01:25</a></td>
+                </tr>
+              
+                <tr>
+                  <td>What does that look like?</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(87050);">To 0:01:27</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(88920);">To 0:01:28</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Well, think about what he's doing.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(89090);">To 0:01:29</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(91410);">To 0:01:31</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Even if let's assume that he fails what he has done is he has planted the seed in the Republican Party that there is a conspiracy around the election of 2,020 that was stolen if you believe the polls somewhere between 60 and 80% of Republicans now believe this, which means that they are going to be utterly uncompromising toward Biden</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(91350);">To 0:01:31</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        ORG
+                      </span>
+                      <span class="uk-label">
+                        the Republican Party
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-warning">
+                      
+                        CARDINAL
+                      </span>
+                      <span class="uk-label">
+                        2,020
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-warning">
+                      
+                        PERCENT
+                      </span>
+                      <span class="uk-label">
+                        80%
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        NORP
+                      </span>
+                      <span class="uk-label">
+                        Republicans
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Biden
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(112750);">To 0:01:52</a></td>
+                </tr>
+              
+                <tr>
+                  <td>there's going to be no cooperation, the party is going to be in this vengeful.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(112860);">To 0:01:52</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(116970);">To 0:01:56</a></td>
+                </tr>
+              
+                <tr>
+                  <td>I mean, imagine a version of McCarthyism or the Fuller around that time 10 and remember Donald Trump is not going to just have seated this conspiracy theory and then go away.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(116970);">To 0:01:56</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        WORK_OF_ART
+                      </span>
+                      <span class="uk-label">
+                        McCarthyism
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Fuller
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Donald Trump
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(129320);">To 0:02:09</a></td>
+                </tr>
+              
+                <tr>
+                  <td>He is still going to be around</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(129290);">To 0:02:09</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(131210);">To 0:02:11</a></td>
+                </tr>
+              
+                <tr>
+                  <td>he's going to be the most powerful Republican as Ron Branson was saying this party has now become a personality cult and he will continue to feed this conspiracy theory which warps the Republican party.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(131180);">To 0:02:11</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        NORP
+                      </span>
+                      <span class="uk-label">
+                        Republican
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Ron Branson
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        NORP
+                      </span>
+                      <span class="uk-label">
+                        Republican
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(144900);">To 0:02:24</a></td>
+                </tr>
+              
+                <tr>
+                  <td>It shreds American democracy, but you know what it's good for Donald Trump</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(145140);">To 0:02:25</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        NORP
+                      </span>
+                      <span class="uk-label">
+                        American
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Donald Trump
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(150060);">To 0:02:30</a></td>
+                </tr>
+              
+                <tr>
+                  <td>it's good for his ratings.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(150260);">To 0:02:30</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(151730);">To 0:02:31</a></td>
+                </tr>
+              
+                <tr>
+                  <td>And that appears to be all he cares about.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(151700);">To 0:02:31</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(154190);">To 0:02:34</a></td>
+                </tr>
+              
+                <tr>
+                  <td>You say the number of people who believe it in the Republican party</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(154130);">To 0:02:34</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        NORP
+                      </span>
+                      <span class="uk-label">
+                        Republican
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(158270);">To 0:02:38</a></td>
+                </tr>
+              
+                <tr>
+                  <td>it's just</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(158300);">To 0:02:38</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(158870);">To 0:02:38</a></td>
+                </tr>
+              
+                <tr>
+                  <td>it's mind boggling.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(159770);">To 0:02:39</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(161000);">To 0:02:41</a></td>
+                </tr>
+              
+                <tr>
+                  <td>So if there's a real fear that there could be huge consequences or a large amount of people believing the lie that 2,020 was stolen.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(161060);">To 0:02:41</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-warning">
+                      
+                        CARDINAL
+                      </span>
+                      <span class="uk-label">
+                        2,020
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(171050);">To 0:02:51</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Everything that you just said, Fred what's the solution here.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(171700);">To 0:02:51</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Fred
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(176170);">To 0:02:56</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Then I go on now.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(176170);">To 0:02:56</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(178560);">To 0:02:58</a></td>
+                </tr>
+              
+                <tr>
+                  <td>I'm gonna ask you another question what's the solution.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(178500);">To 0:02:58</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(180690);">To 0:03:00</a></td>
+                </tr>
+              
+                <tr>
+                  <td>The only solution we can really hope for is that the fever breaks at some point.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(180960);">To 0:03:00</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(186270);">To 0:03:06</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Something has happened to the Republican party.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(186210);">To 0:03:06</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        NORP
+                      </span>
+                      <span class="uk-label">
+                        Republican
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(188970);">To 0:03:08</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Over the last 20 years, I think it began with Newt Gingrich.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(188940);">To 0:03:08</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        DATE
+                      </span>
+                      <span class="uk-label">
+                        the last 20 years
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Newt Gingrich
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(192510);">To 0:03:12</a></td>
+                </tr>
+              
+                <tr>
+                  <td>This kind of weird, dark conspiracy mongering.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(192450);">To 0:03:12</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(197150);">To 0:03:17</a></td>
+                </tr>
+              
+                <tr>
+                  <td>The belief that politics is war that you political opposition or enemies that is culminated in Trump</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(198250);">To 0:03:18</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(206590);">To 0:03:26</a></td>
+                </tr>
+              
+                <tr>
+                  <td>and we know where you have people who basically don't care.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(206800);">To 0:03:26</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(210490);">To 0:03:30</a></td>
+                </tr>
+              
+                <tr>
+                  <td>If American democracy goes down into the sewer.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(210460);">To 0:03:30</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        NORP
+                      </span>
+                      <span class="uk-label">
+                        American
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(213130);">To 0:03:33</a></td>
+                </tr>
+              
+                <tr>
+                  <td>As long as their guy wins that fever has to break.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(213360);">To 0:03:33</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(217770);">To 0:03:37</a></td>
+                </tr>
+              
+                <tr>
+                  <td>I don't quite know.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(217740);">To 0:03:37</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(218850);">To 0:03:38</a></td>
+                </tr>
+              
+                <tr>
+                  <td>What else does it?</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(218790);">To 0:03:38</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(219750);">To 0:03:39</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Okay, then that was a perfect segue to what I wanted to ask you when the follow up to the question?</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(219840);">To 0:03:39</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(226200);">To 0:03:46</a></td>
+                </tr>
+              
+                <tr>
+                  <td>So then how do you?</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(226840);">To 0:03:46</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(228010);">To 0:03:48</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Because everyone says we got to come together</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(227980);">To 0:03:47</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(230050);">To 0:03:50</a></td>
+                </tr>
+              
+                <tr>
+                  <td>and it's true.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(229990);">To 0:03:49</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(230560);">To 0:03:50</a></td>
+                </tr>
+              
+                <tr>
+                  <td>You know that we at least find ways to come together.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(230530);">To 0:03:50</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(233770);">To 0:03:53</a></td>
+                </tr>
+              
+                <tr>
+                  <td>But how do you come together?</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(233830);">To 0:03:53</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(235120);">To 0:03:55</a></td>
+                </tr>
+              
+                <tr>
+                  <td>And how do you compromise with people who don't believe that a fair election was one people who don't believe in science?</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(235060);">To 0:03:55</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-warning">
+                      
+                        CARDINAL
+                      </span>
+                      <span class="uk-label">
+                        one
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(241870);">To 0:04:01</a></td>
+                </tr>
+              
+                <tr>
+                  <td>People who don't believe in facts.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(241810);">To 0:04:01</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(243040);">To 0:04:03</a></td>
+                </tr>
+              
+                <tr>
+                  <td>People who don't believe in reality.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(243010);">To 0:04:03</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(244810);">To 0:04:04</a></td>
+                </tr>
+              
+                <tr>
+                  <td>How do you do that?</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(246880);">To 0:04:06</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(248660);">To 0:04:08</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Look, Biden is the perfect guy to try this because what I think Biden's philosophy of government is going to be let's not have an existential debate over everything.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(249250);">To 0:04:09</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Biden
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Biden
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(260300);">To 0:04:20</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Can we agree that people Disover relief for Cobit, can we agree that we could do a better job with infrastructure in America?</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(260320);">To 0:04:20</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        GPE
+                      </span>
+                      <span class="uk-label">
+                        Disover
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        LAW
+                      </span>
+                      <span class="uk-label">
+                        Cobit
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        GPE
+                      </span>
+                      <span class="uk-label">
+                        America
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(268870);">To 0:04:28</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Can we agree that in certain areas of immigration reform and he will try piece meal to get things done.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(268960);">To 0:04:28</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(277140);">To 0:04:37</a></td>
+                </tr>
+              
+                <tr>
+                  <td>But again the test is going to be the Republicans</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(277110);">To 0:04:37</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        NORP
+                      </span>
+                      <span class="uk-label">
+                        Republicans
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(280380);">To 0:04:40</a></td>
+                </tr>
+              
+                <tr>
+                  <td>it's really important to not keep saying we all need to get together, this is not an equal side thing.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(280320);">To 0:04:40</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(285820);">To 0:04:45</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Barack Obama tried to get together.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(285820);">To 0:04:45</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Barack Obama
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(288040);">To 0:04:48</a></td>
+                </tr>
+              
+                <tr>
+                  <td>He made a series of gestures toward the Republicans.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(288040);">To 0:04:48</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        NORP
+                      </span>
+                      <span class="uk-label">
+                        Republicans
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(292420);">To 0:04:52</a></td>
+                </tr>
+              
+                <tr>
+                  <td>He appointed Bush's defense secretary.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(292360);">To 0:04:52</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Bush
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(294460);">To 0:04:54</a></td>
+                </tr>
+              
+                <tr>
+                  <td>He appointed a Republican, he offered the job Commerce Secretary Tory Republican.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(294430);">To 0:04:54</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        NORP
+                      </span>
+                      <span class="uk-label">
+                        Republican
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        ORG
+                      </span>
+                      <span class="uk-label">
+                        Commerce
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        NORP
+                      </span>
+                      <span class="uk-label">
+                        Tory Republican
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(299800);">To 0:04:59</a></td>
+                </tr>
+              
+                <tr>
+                  <td>He took Mitt Romney's plan for health care and made it his own.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(299890);">To 0:04:59</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Mitt Romney's
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(303160);">To 0:05:03</a></td>
+                </tr>
+              
+                <tr>
+                  <td>None of it worked.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(303480);">To 0:05:03</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(304590);">To 0:05:04</a></td>
+                </tr>
+              
+                <tr>
+                  <td>He didn't get one vote from the house.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(304530);">To 0:05:04</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-warning">
+                      
+                        CARDINAL
+                      </span>
+                      <span class="uk-label">
+                        one
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(306570);">To 0:05:06</a></td>
+                </tr>
+              
+                <tr>
+                  <td>So grain, this stimulus, he didn't get one vote for health care.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(306540);">To 0:05:06</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-warning">
+                      
+                        CARDINAL
+                      </span>
+                      <span class="uk-label">
+                        one
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(311590);">To 0:05:11</a></td>
+                </tr>
+              
+                <tr>
+                  <td>We've seen this movie before.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(311530);">To 0:05:11</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(313630);">To 0:05:13</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Yeah, so I think we know what Biden would like to do?</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(313600);">To 0:05:13</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Biden
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(316690);">To 0:05:16</a></td>
+                </tr>
+              
+                <tr>
+                  <td>I pretty much bet.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(316660);">To 0:05:16</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(318220);">To 0:05:18</a></td>
+                </tr>
+              
+                <tr>
+                  <td>That is what he will try to do.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(318160);">To 0:05:18</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(319690);">To 0:05:19</a></td>
+                </tr>
+              
+                <tr>
+                  <td>The question is does MIT Romney believe that the politics of vengeful obstructionism is what keeps him in power or does he believe that at some point, you kind of have to do something for the country.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(319820);">To 0:05:19</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        ORG
+                      </span>
+                      <span class="uk-label">
+                        MIT
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Romney
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(332760);">To 0:05:32</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Okay, good I'm glad you said that.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(332700);">To 0:05:32</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(336420);">To 0:05:36</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Because I've been saying the same thing.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(336360);">To 0:05:36</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(338160);">To 0:05:38</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Barack Obama tried all of this and nothing happened.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(338510);">To 0:05:38</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Barack Obama
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(342150);">To 0:05:42</a></td>
+                </tr>
+              
+                <tr>
+                  <td>It didn't work that miss McConnell say, we're going to make him a one term president, no matter how much he reached across the aisle.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(342120);">To 0:05:42</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        McConnell
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-warning">
+                      
+                        CARDINAL
+                      </span>
+                      <span class="uk-label">
+                        one
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(350000);">To 0:05:50</a></td>
+                </tr>
+              
+                <tr>
+                  <td>They didn't want to work with them, right?</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(349970);">To 0:05:49</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(352190);">To 0:05:52</a></td>
+                </tr>
+              
+                <tr>
+                  <td>And then they blamed him for the division in the country and the country has never been more divided and it was them who did the division.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(352130);">To 0:05:52</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(358370);">To 0:05:58</a></td>
+                </tr>
+              
+                <tr>
+                  <td>So then why would Joe Biden do the same thing on another note, Joe?</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(358310);">To 0:05:58</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Joe Biden
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Joe
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(363350);">To 0:06:03</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Biden has said I don't think that, you know, the prosecution of Donald Trump.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(363320);">To 0:06:03</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Biden
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Donald Trump
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(366950);">To 0:06:06</a></td>
+                </tr>
+              
+                <tr>
+                  <td>If he's done anything wrong, right?</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(366890);">To 0:06:06</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(368390);">To 0:06:08</a></td>
+                </tr>
+              
+                <tr>
+                  <td>If it comes to that that it is good for the country and he doesn't believe it.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(368330);">To 0:06:08</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(371780);">To 0:06:11</a></td>
+                </tr>
+              
+                <tr>
+                  <td>When at this moment, Joe Biden keeps saying that but Donald Trump keeps trying to subvert the will of the people he keeps breaking rules.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(372530);">To 0:06:12</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Joe Biden
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Donald Trump
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(383850);">To 0:06:23</a></td>
+                </tr>
+              
+                <tr>
+                  <td>He is and I don't know if he's breaking any laws.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(383850);">To 0:06:23</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(386490);">To 0:06:26</a></td>
+                </tr>
+              
+                <tr>
+                  <td>So then why would he say this guy shouldn't be prosecuted or shouldn't be investigated.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(386860);">To 0:06:26</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(392050);">To 0:06:32</a></td>
+                </tr>
+              
+                <tr>
+                  <td>If he's done something wrong.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(391990);">To 0:06:31</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(393370);">To 0:06:33</a></td>
+                </tr>
+              
+                <tr>
+                  <td>And why should he go on down the same path that did not work for the person he was a vice president with.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(393340);">To 0:06:33</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(401020);">To 0:06:41</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Because, Don, the problem is the Democrats won't have a majority in the Senate</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(401790);">To 0:06:41</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Don
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        NORP
+                      </span>
+                      <span class="uk-label">
+                        Democrats
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        ORG
+                      </span>
+                      <span class="uk-label">
+                        Senate
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(406360);">To 0:06:46</a></td>
+                </tr>
+              
+                <tr>
+                  <td>it's that simple.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(406360);">To 0:06:46</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(407530);">To 0:06:47</a></td>
+                </tr>
+              
+                <tr>
+                  <td>The only way you're going to get something done is if you can get some Republicans to come along with you.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(407530);">To 0:06:47</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        NORP
+                      </span>
+                      <span class="uk-label">
+                        Republicans
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(413170);">To 0:06:53</a></td>
+                </tr>
+              
+                <tr>
+                  <td>And at the end of the day, the reality is in this country thank God the president doesn't personally decide who gets prosecuted.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(413140);">To 0:06:53</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        DATE
+                      </span>
+                      <span class="uk-label">
+                        the end of the day
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(422120);">To 0:07:02</a></td>
+                </tr>
+              
+                <tr>
+                  <td>The tragedy of what we're witnessing with Donald Trump is we are realizing that American democracy is built on a lot of norms, not laws.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(422090);">To 0:07:02</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Donald Trump
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        NORP
+                      </span>
+                      <span class="uk-label">
+                        American
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(432470);">To 0:07:12</a></td>
+                </tr>
+              
+                <tr>
+                  <td>There are a lot of weird things in the system.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(432530);">To 0:07:12</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(434510);">To 0:07:14</a></td>
+                </tr>
+              
+                <tr>
+                  <td>For example, we have this strange almost three months transition</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(434450);">To 0:07:14</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        DATE
+                      </span>
+                      <span class="uk-label">
+                        almost three months
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(438080);">To 0:07:18</a></td>
+                </tr>
+              
+                <tr>
+                  <td>when presidents can do you know the guy who loses?</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(438380);">To 0:07:18</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(441260);">To 0:07:21</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Can do really crazy stuff.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(441560);">To 0:07:21</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(443660);">To 0:07:23</a></td>
+                </tr>
+              
+                <tr>
+                  <td>It hasn't happened, but this presidents have abided by a norm that says when the after the election and before the inauguration, they generally try to smooth things out.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(443630);">To 0:07:23</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(454580);">To 0:07:34</a></td>
+                </tr>
+              
+                <tr>
+                  <td>They try to keep things stable and they try to assist in the transition.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(454520);">To 0:07:34</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(458150);">To 0:07:38</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Donald Trump reminds us that all of these things are norms.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(458500);">To 0:07:38</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Donald Trump
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(462130);">To 0:07:42</a></td>
+                </tr>
+              
+                <tr>
+                  <td>You know, he is doing everything to shred every one of these norms.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(462550);">To 0:07:42</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(466540);">To 0:07:46</a></td>
+                </tr>
+              
+                <tr>
+                  <td>This is the you know the fear I have this</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(466720);">To 0:07:46</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(469450);">To 0:07:49</a></td>
+                </tr>
+              
+                <tr>
+                  <td>is a take off of a George Orwell line.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(469390);">To 0:07:49</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        George Orwell
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(471910);">To 0:07:51</a></td>
+                </tr>
+              
+                <tr>
+                  <td>But if you want a picture of the future of American democracy, it is Donald Trump stomping on the face of American democracy forever because people have seen that this can be done.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(471850);">To 0:07:51</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        NORP
+                      </span>
+                      <span class="uk-label">
+                        American
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Donald Trump
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        NORP
+                      </span>
+                      <span class="uk-label">
+                        American
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(482550);">To 0:08:02</a></td>
+                </tr>
+              
+                <tr>
+                  <td>And now what happens when the next president we're going to have to come up with an Anti Trump rescue democracy.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(482960);">To 0:08:02</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Anti Trump
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(489530);">To 0:08:09</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Legislative package at some point and take all these norms and make them lose.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(489590);">To 0:08:09</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(494980);">To 0:08:14</a></td>
+                </tr>
+              
+                <tr>
+                  <td>If you want to run for president you have to release your tax returns.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(495160);">To 0:08:15</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(499750);">To 0:08:19</a></td>
+                </tr>
+              
+                <tr>
+                  <td>You have to put your business in a blind trust when you lose an election.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(499900);">To 0:08:19</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(504610);">To 0:08:24</a></td>
+                </tr>
+              
+                <tr>
+                  <td>There are certain things you can't do as president we're going to have to institutionalize what has been norms, good behavior, it matters that we're good judgment in good manners.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(504580);">To 0:08:24</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(517790);">To 0:08:37</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Because Donald Trump reminds us that he is spotlighted one of the great weaknesses of American democracy, which is that we expect people of goodwill to occupy high offices</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(518090);">To 0:08:38</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Donald Trump
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        NORP
+                      </span>
+                      <span class="uk-label">
+                        American
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(529070);">To 0:08:49</a></td>
+                </tr>
+              
+                <tr>
+                  <td>and he's not bad,</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(529160);">To 0:08:49</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(530630);">To 0:08:50</a></td>
+                </tr>
+              
+                <tr>
+                  <td>man he's exploited every single loophole in the system.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(530570);">To 0:08:50</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(533750);">To 0:08:53</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Thank you for car.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(534380);">To 0:08:54</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(535730);">To 0:08:55</a></td>
+                </tr>
+              
+                <tr>
+                  <td>We need a zoom call with like a fire and a glass of wine or some brandy or something because I think it's going to take more than wine at this point.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(535760);">To 0:08:55</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(543560);">To 0:09:03</a></td>
+                </tr>
+              
+                <tr>
+                  <td>And you cause I have one to continue.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(544040);">To 0:09:04</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(545600);">To 0:09:05</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Yes, probably alright.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(545630);">To 0:09:05</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(548570);">To 0:09:08</a></td>
+                </tr>
+              
+                <tr>
+                  <td>For double double, Scott all right, okay that's where you're going?</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(548510);">To 0:09:08</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Scott
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(551810);">To 0:09:11</a></td>
+                </tr>
+              
+                <tr>
+                  <td>Thank you, Fred.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(551750);">To 0:09:11</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-success">
+                      
+                        PERSON
+                      </span>
+                      <span class="uk-label">
+                        Fred
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(552470);">To 0:09:12</a></td>
+                </tr>
+              
+                <tr>
+                  <td>The car, I appreciate it.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(552410);">To 0:09:12</a></td>
+                  <td>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(553340);">To 0:09:13</a></td>
+                </tr>
+              
+                <tr>
+                  <td>The book again is 10 lessons for a post pandemic world and make sure that you watch for the car GPS Sunday 10 a M. And one P M.</td>
+                  <td></td>
+                  <td><a class="uk-link-text" href="#" onclick="seekTo(553280);">To 0:09:13</a></td>
+                  <td>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-warning">
+                      
+                        CARDINAL
+                      </span>
+                      <span class="uk-label">
+                        10
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-danger">
+                      
+                        DATE
+                      </span>
+                      <span class="uk-label">
+                        Sunday 10
+                      </span>
+                    </ul>
+                  
+                    <ul class="uk-list uk-list-divider">
+                      
+                        <span class="uk-label uk-label-warning">
+                      
+                        CARDINAL
+                      </span>
+                      <span class="uk-label">
+                        one
+                      </span>
+                    </ul>
+                  
+                  </td>
+                  <td><a class="uk-link-text" href="#"  onclick="seekTo(562860);">To 0:09:22</a></td>
+                </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </body>
+</html>
