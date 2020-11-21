@@ -6,6 +6,7 @@ import os
 from polling import TimeoutException, poll
 from gen_report import vid_report
 import json
+import datetime
 
 class MyLogger(object):
     def debug(self, msg):
@@ -122,6 +123,7 @@ def main(video_id):
         ydl.download([video_url])
 
 if __name__ == "__main__":
+    begin_time = datetime.datetime.now()
     if os.getenv('ASSEMBLY_API_TOKEN') == None:
         raise Exception('NEED ASSEMBLY_API_TOKEN')
     parser = argparse.ArgumentParser(description='Process some integers.')
@@ -130,3 +132,5 @@ if __name__ == "__main__":
     video_id = args.video_id
     # make sure assemblyAI token is valid
     main(video_id)
+    print("execution time: -----")
+    print(datetime.datetime.now() - begin_time)
