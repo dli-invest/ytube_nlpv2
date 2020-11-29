@@ -30,6 +30,8 @@ def vid_report(data, video_id, output_file, html_template='report.jinja2'):
     sent_num_words = len(sentence.split())
     words_in_sent = words[total_words:total_words+sent_num_words]
     total_words += sent_num_words
+    if len(words_in_sent) == 0:
+      continue
     start_time = words_in_sent[0].get('start')
     end_time = words_in_sent[-1].get('end')
     start_time_label = convert(start_time / 1000)
@@ -61,7 +63,9 @@ def is_proper_noun(word):
 
 if __name__ == "__main__":
   # read data from json file
-  with open('data.json') as f:
+  file_name = "PyroGenesis Goes In Depth About Q3 Financials Which Broke Records For Revenue, Income and EPS.m4a.json"
+  file_path = f"recordings/{file_name}"
+  with open(file_path) as f:
     data = json.load(f)
-  vid_report(data, "BaW_jenozKc")
+  vid_report(data, "BaW_jenozKc", f"{file_name}.html")
   pass

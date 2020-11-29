@@ -131,3 +131,5 @@ dmypy.json
 *.mp3
 recordings/*.mp3
 set_env.bat
+pythonenv3.8
+*.m4a

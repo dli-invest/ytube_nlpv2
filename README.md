@@ -12,6 +12,22 @@ For another 30 minute ish video, it took 0:08:33.610660 minutes to run this scri
 2. Send email 
 3. Update list of downloaded files to discord
 
+
+## Install
+
+```sh
+chmod +x scripts/install.sh scripts/setup_sumy.sh
+python3.8 -m pip install -r requirements.txt
+scripts/install.sh
+scripts/setup_sumy.py
+```
+
+Required env vars
+
+Assembly_API_TOKEN
+
+See [assembly.ai](https://www.assemblyai.com/)
+
 ## Todo
 
 Improve video naming - reuse filename
